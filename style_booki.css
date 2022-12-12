@@ -1,0 +1,59 @@
+/* HEADER */
+.debut
+{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 35px;
+    margin-bottom: 45px;
+}
+
+.logo_booki
+{
+    padding-top: 10px;
+}
+
+.container {
+	width: 1400px;
+	margin: auto;
+}
+
+.menu 
+{
+    margin:0;
+    list-style-type: none;
+}
+
+
+
+/* CORPS */
+.directionRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.section {
+	padding-bottom: 80px;
+	padding-top: 80px;
+}
+
+.textCenter {
+	text-align: left;
+	margin: 20px;
+}
+
+.article {
+	width: 25%;
+	margin: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+.images_activites {
+	width: 300px;
+	margin: 10px;
+}
+
