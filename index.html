@@ -13,31 +13,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300,400;500;600;800;900&family=Inter:wght@900&display=swap"
           rel="stylesheet">
 
-    <!--add FontAwesome-->
+    <!--ajout Icones FontAwesome-->
     <script src="https://kit.fontawesome.com/77ca3878be.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 
-<!--Entête du site-->
+
 <body>
+<!--Entête du site Booki-->
 <header>
     <div class="debut">
         <img src="images/logo/Booki.png" height="45" width="98" alt="Logo Booki" class="logo_booki">
     <nav>
-        <ul  class="menu">
-            <li class="lien_hebergement"><a href="index.html#hebergements">Hébergements</a></li>
-            <li class="lien_activites"><a href="index.html#activites_marseille">Activités</a></li>
+        <ul class="menu">
+            <li a href="#hébergements_marseille">Hébergements</a></li>
+            <li a href="#activités_marseille">Activités</a></li>
         </ul>
+
     </nav>
     </div>
 </header>
 
+<!--Texte et titre-->
+<div id="texte">
+    <h1 class="titre">
+        Trouvez votre hébergement pour des vacances de rêve</h1>
+    <h2 class="sous-titre">En plein centre ville ou en pleine nature</h2>
+</div>
+
+<!--Barre de recherche-->
+
+        <div class="recherche">
+               <form action="#" method="post" class="bouton-forme">
+                   <input class="bouton-texte" type="texte" name="barre de recherche" placeholder="Marseille, France">
+                   <input class="bouton-recherche" type="reset" value="Rechercher">
+                   <div class="icone-recherche"><i class="fas fa-search"></i></div>
+               </form>
+        </div>
+
+
 
 
 <!--Corps du site-->
+
 <div class="container">
-    <h2 id="activites_marseille"></h2>
-    <section>
+    <h2 id="#activités_marseille"></h2>
+    <section id="Activités">
 
         <h2>Activités à Marseille</h2>
         <div class="directionRow">

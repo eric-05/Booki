@@ -1,7 +1,7 @@
 /* HEADER */
 .debut
 {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     display: flex;
@@ -14,15 +14,75 @@
     padding-top: 10px;
 }
 
-.container {
-	width: 1400px;
-	margin: auto;
+.entete
+{
+    max-width: 1330px;
+    margin: 0 auto;
 }
 
 .menu 
 {
     margin:0;
     list-style-type: none;
+}
+
+.texte
+{
+    margin-bottom: 0px;
+}
+
+.container {
+	width: 1400px;
+	margin: auto;
+}
+
+.titre
+{
+    font-size: 22px;  
+    margin-bottom: 15px;
+}
+
+.sous-titre
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.recherche
+{
+    display: flex;
+}
+
+.forme
+{
+    display: block;
+}
+
+.bouton-forme
+{
+    display: flex;
+}
+
+.bouton-texte
+{
+    font-size: 18px;
+    cursor: auto;
+    font-weight: bolder;
+}
+
+.bouton-recherche
+{
+    font-size: 18px;
+    color: white;
+    background-color: #0065FC;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+    transition: 0.1s ease-in-out;
+}
+
+.bouton-recherche:hover
+{
+    background-color: #0050c7;
 }
 
 
