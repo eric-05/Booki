@@ -48,6 +48,8 @@
     font-weight: 400;
 }
 
+/* BARRE DE RECHERCHE */
+
 .recherche
 {
     display: flex;
@@ -65,14 +67,14 @@
 
 .bouton-texte
 {
-    font-size: 18px;
+    font-size: 20px;
     cursor: auto;
     font-weight: bolder;
 }
 
 .bouton-recherche
 {
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     background-color: #0065FC;
     cursor: pointer;
@@ -83,6 +85,53 @@
 .bouton-recherche:hover
 {
     background-color: #0050c7;
+}
+
+input.bouton-texte
+{
+    height: auto;
+    width: 215px;
+    outline: none;
+}
+
+.recherche input
+{
+    height: 50px;
+    border: 1px solid #f2f2f2;
+    padding: 0 10px 0 10px;
+}
+
+.btn-rch:hover
+{
+    background-color: #0050c7;
+}
+
+.icone
+{
+    padding: 10px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.fa
+{
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa-map-marker-alt
+{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: black;
+}
+
+.icone-recherche
+{
+    opacity: 0;
 }
 
 
