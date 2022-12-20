@@ -24,11 +24,47 @@
 {
     margin:0;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
-.texte
+.menu li {
+    margin-right: 30px;
+}
+
+.lien_activites a, 
 {
-    margin-bottom: 0px;
+    position: relative;
+    top: 50px;
+}
+
+.lien_activites, 
+{
+    border-top: white solid 3px;
+}
+
+.lien_activites:hover
+{
+    color: #0065FC;
+}
+
+
+
+
+
+
+nav
+{
+    width: 100%;
+}
+
+.texte-recherche
+{
+   display: flex;
+   flex-direction: column;
+   margin-left: 5px;
+   padding: 10px 50px;
 }
 
 .container {
@@ -49,120 +85,181 @@
 }
 
 /* BARRE DE RECHERCHE */
-
-.recherche
+form
 {
     display: flex;
+    margin: 15px 0 20px 0;
+    width: 415px;
+    height: 50px;
 }
 
-.forme
+.map
 {
-    display: block;
+    font-size: 115%;
+    width: 50px;
+    margin: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-.bouton-forme
+.map i
 {
-    display: flex;
+    position: relative;
+    top: 15px;
 }
 
-.bouton-texte
+input
 {
-    font-size: 20px;
-    cursor: auto;
-    font-weight: bolder;
+    border: #f2f2f2 solid 1px;
+    padding: 10px;
+    width: 235px;
 }
 
-.bouton-recherche
+button
 {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 110%;
     color: white;
     background-color: #0065FC;
-    cursor: pointer;
+    width: 130px ;
+    border: #0065fc solid 2px;
     border-radius: 0px 15px 15px 0px;
-    transition: 0.1s ease-in-out;
 }
 
-.bouton-recherche:hover
+.loupe
 {
-    background-color: #0050c7;
+    display: none;
 }
 
-input.bouton-texte
+/* Filtres de recherche */
+
+.filtre_de_recherche
 {
-    height: auto;
-    width: 215px;
-    outline: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    padding: 10px 50px;
 }
 
-.recherche input
+.filtre{
+    display: flex;
+    margin: 10px 0 25px 5px;
+}
+
+.filtre div
+{
+    font-weight: 700;
+    font-size: 105%;
+}
+
+.text_filtre
+{
+    margin: 0 10px 0 0px;
+    align-self: center;
+}
+
+.ima_ico
 {
     height: 50px;
-    border: 1px solid #f2f2f2;
-    padding: 0 10px 0 10px;
+    width: 50px;
+    margin: 0 5px 0 -3px;
+    padding: 0;
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 100%;
 }
 
-.btn-rch:hover
+.marge
 {
-    background-color: #0050c7;
+    margin-left: 5px;
 }
 
-.icone
+.eco, .familial, .romantique, .animaux
 {
-    padding: 10px;
-    padding-left: 10px;
-    background-color: #f2f2f2;
-    border-radius: 15px 0px 0px 15px;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
+    height: 50px;
+    margin: 0 10px 0 10px;
+    padding: 0 15px 0 0px;
+    display: flex;
+    align-items: center;
+    border: #dddddd solid 2px;
+    border-radius: 25px;
 }
 
-.fa
+.eco:hover, 
+.familial:hover, 
+.romantique:hover, 
+.animaux:hover
 {
-    font-family: "Font Awesome 5 Free";
+     border: #0065FC solid 2px;
+     background-color: #0065FC;
+     color: #DEEBFF;
 }
 
-.fa-map-marker-alt
+/* information */
+
+.information{
+    display: flex;
+    align-items: center;
+}
+
+.information_text{
+    margin-left: 10px;
+}
+
+.information i{
+    font-size: 130%;
+    color: #ffffff;
+    background-color: #0065FC;
+    border: #dddddd solid 1px;
+    border-radius: 100%;
+}
+
+
+
+
+/* Activités à Marseille */
+.directionRow
 {
-    padding-top: 5px;
-    padding-left: 10px;
-    color: black;
-}
-
-.icone-recherche
-{
-    opacity: 0;
-}
-
-
-
-/* CORPS */
-.directionRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+    background-color: #f2f2f2;
+    padding: 45px;
+    border-radius: 20px;
 }
 
-.section {
+.section
+{
 	padding-bottom: 80px;
 	padding-top: 80px;
 }
 
-.textCenter {
+.textCenter
+{
 	text-align: left;
 	margin: 20px;
 }
 
-.article {
+.article
+{
 	width: 25%;
-	margin: 0px 20px;
+	margin: 10px;
 	display: flex;
 	flex-direction: column;
-	border-radius: 8px;
+	border-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
-.images_activites {
+.images_activites 
+{
 	width: 300px;
-	margin: 10px;
+	border-radius: 30px 30px 0 0;
+    height: 60%;
+    margin: 0;
+    overflow: hidden;
 }
 

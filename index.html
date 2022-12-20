@@ -23,19 +23,18 @@
 <!--Entête du site Booki-->
 <header>
     <div class="debut">
-        <img src="images/logo/Booki.png" height="45" width="98" alt="Logo Booki" class="logo_booki">
+        <img src="images/logo/Booki.png" alt="logo_booki" height="45" width="98" alt="Logo Booki" class="logo_booki">
     <nav>
         <ul class="menu">
-            <li a href="#hébergements_marseille">Hébergements</a></li>
-            <li a href="#activités_marseille">Activités</a></li>
+            <li class="lien_hebergements"><a href="index.html#hebergements">Hébergements</a></li>
+            <li class="lien_activites"><a href="index.html#activités_marseille">Activités</a></li>
         </ul>
-
     </nav>
     </div>
 </header>
 
 <!--Texte et titre-->
-<div id="texte">
+<div id="texte-recherche">
     <h1 class="titre">
         Trouvez votre hébergement pour des vacances de rêve</h1>
     <h2 class="sous-titre">En plein centre ville ou en pleine nature</h2>
@@ -43,21 +42,61 @@
 
 <!--Barre de recherche-->
 
-        <div class="recherche">
-               <form action="#" method="post" class="bouton-forme">
-                   <input class="bouton-texte" type="texte" name="barre de recherche" placeholder="Marseille, France">
-                   <input class="bouton-recherche" type="reset" value="Rechercher">
-                   <div class="icone-recherche"><i class="fas fa-search"></i></div>
-               </form>
-        </div>
+        <section class="filtre_de_recherche">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <div class="commentaires">En plein centre ville ou en pleine nature</div>    
+            <form method="post" action="#">
+                <span class="map"><i class="fa-solid fa-location-dot"></i></span>
+                <input type="text" name="ville" placeholder="Entrez la ville">
+                <button type="submit"><span class="rechercher">Rechercher</span>
+                <span class="loupe"><i class="fas fa-regular fa-magnifying-glass"></i></span></button>
+            </form>
+
+<!--filtres de recherche-->
+
+            <section class="filtre">                
+                <div class="text_filtre">Filtres</div>
+                
+                <a class="click_filtre" href="#">
+                    <div class="eco">    
+                        <div class="ima_ico"><i class="fa-solid fa-money-bill-wave"></i></div>
+                        <div class="marge">économique</div>
+                    </div>
+                </a>
+
+                <a class="click_filtre" href="#">
+                    <div class="familial">
+                        <div class="ima_ico"><i class="fa-solid fa-child"></i></div>
+                        <div class="marge">Familial</div>
+                    </div>
+                </a>
+
+                <a class="click_filtre" href="#">
+                    <div class="romantique">
+                        <div class="ima_ico"><i class="fa-solid fa-heart"></i></div>
+                        <div class="marge">Romantique</div>
+                    </div>
+                </a>
+
+                <a class="click_filtre" href="#">
+                    <div class="animaux">
+                        <div class="ima_ico"><i class="fa-solid fa-dog"></i></div>
+                        <div class="marge">Animaux autorisés</div>
+                    </div>
+                </a>
+
+            </section>
 
 
-
+            <div class="information">
+                <div class="information_i"><i class="fas fa-light fa-circle-info"></i></div>
+                <div class="information_text">Plus de 500 logements sont disponibles dans cette ville</div>
+            </div>
 
 <!--Corps du site-->
 
 <div class="container">
-    <h2 id="#activités_marseille"></h2>
+    <h2 id="activités_marseille"></h2>
     <section id="Activités">
 
         <h2>Activités à Marseille</h2>
