@@ -29,29 +29,17 @@
     justify-content: end;
 }
 
-.menu li {
+.menu li 
+{
     margin-right: 30px;
+  
 }
 
-.lien_activites a, 
+.lien_activites:hover, .lien_hebergements:hover
 {
-    position: relative;
-    top: 50px;
+    color:#0065FC;   
+    border-top:3px solid #0065FC;
 }
-
-.lien_activites, 
-{
-    border-top: white solid 3px;
-}
-
-.lien_activites:hover
-{
-    color: #0065FC;
-}
-
-
-
-
 
 
 nav
